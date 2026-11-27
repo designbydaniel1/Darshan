@@ -3,166 +3,742 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Peer Hatalmud — Support Our Boys</title>
-<meta name="description" content="Peer Hatalmud Institution, Jerusalem — a warm, dedicated yeshiva for boys who need a second chance. Partner with us.">
+<title>Peer Hatalmud Building Campaign · Jerusalem</title>
+<meta name="description" content="Help build the new home of Yeshivat Peer Hatalmud in Ramat Shlomo, Jerusalem: a beit midrash, dining hall and 30 students' rooms under one roof. Dedicate a room, a seat or a mezuzah.">
+<meta property="og:title" content="A New Home for Our Torah, a Future for Our Boys">
+<meta property="og:description" content="The Peer Hatalmud building campaign, Jerusalem.">
+<meta property="og:image" content="img/ext1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@400;600;700;800&display=swap">
 <style>
-  :root{
-    --bg:#faf7f0; --surface:#ffffff; --ink:#1f2328; --muted:#5b6168;
-    --accent:#8a6a2f; --accent-ink:#fff; --deep:#1e2a38; --line:#e6dfcf;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#14181d; --surface:#1c2228; --ink:#ece8df; --muted:#a7adb3;
-      --accent:#c9a45c; --accent-ink:#14181d; --deep:#0e1216; --line:#2c333a;
-    }
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Inter,system-ui,sans-serif}
-  h1,h2,h3{font-family:"Frank Ruhl Libre",Georgia,serif;line-height:1.2;margin:0 0 .5em}
-  a{color:var(--accent)}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600}
-  .btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
-  nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.25rem;color:var(--ink);text-decoration:none}
-  .brand span{color:var(--muted);font-weight:500;margin-inline-start:.4em}
-  nav .btn{padding:9px 20px}
-  .hero{position:relative;color:#fff;background:var(--deep) url(images/building.jpg) center/cover;min-height:78vh;display:flex;align-items:flex-end}
-  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,18,22,.35),rgba(14,18,22,.88))}
-  .hero .wrap{position:relative;padding-bottom:72px;padding-top:120px}
-  .hero .he{font-family:"Frank Ruhl Libre",serif;font-size:1.3rem;opacity:.85;margin-bottom:.4rem}
-  .hero h1{font-size:clamp(2.2rem,6vw,4rem);max-width:14ch}
-  .hero p{font-size:1.15rem;max-width:56ch;opacity:.92}
-  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-  section{padding:80px 0}
-  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--accent);font-weight:600;margin-bottom:.6rem}
-  .split{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
-  .split img{width:100%;border-radius:14px;display:block}
-  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
-  .stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center}
-  .stat b{display:block;font-family:"Frank Ruhl Libre",serif;font-size:2.6rem;color:var(--accent);line-height:1}
-  .stat span{color:var(--muted);font-size:.95rem}
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
-  .card h3{font-size:1.25rem}
-  .card p{margin:0;color:var(--muted)}
-  .alt{background:var(--surface);border-block:1px solid var(--line)}
-  blockquote{margin:0;font-family:"Frank Ruhl Libre",serif;font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.45}
-  .quote-by{margin-top:16px;color:var(--muted)}
-  .give{background:var(--deep);color:#fff}
-  .give .eyebrow{color:#d9b56c}
-  .tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
-  .tier{border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:22px;background:rgba(255,255,255,.04)}
-  .tier b{font-family:"Frank Ruhl Libre",serif;font-size:1.9rem;display:block}
-  .tier span{opacity:.8;font-size:.92rem}
-  .bank{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
-  .bank div{border-top:1px solid rgba(255,255,255,.2);padding-top:14px}
-  .bank small{opacity:.7;display:block}
-  .give .note{opacity:.8;font-size:.95rem}
-  footer{padding:40px 0;color:var(--muted);font-size:.93rem}
-  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-  @media (max-width:820px){
-    .split,.bank{grid-template-columns:1fr}
-    .cards,.stats{grid-template-columns:1fr}
-    .tiers{grid-template-columns:1fr 1fr}
-    section{padding:56px 0}
-    .wrap{padding:0 16px}
-    .brand span{display:none}
-  }
+:root{
+  --paper:#fbf9f5; --stone:#efe9dd; --white:#fff;
+  --ink:#1f2a44; --ink-2:#4a5468; --ink-3:#6b7385;
+  --brass:#9c7a34; --brass-2:#b8954a; --brass-soft:#e9dcbc;
+  --line:#e0d7c6; --navy-line:rgba(255,255,255,.16);
+  --tbc-bg:#fff1c2; --tbc-fg:#6b4e00;
+  --display:"Frank Ruhl Libre","Times New Roman",serif;
+  --body:"Assistant","Segoe UI",system-ui,sans-serif;
+  --wrap:1180px; --r:4px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.1;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+h3{font-size:clamp(1.25rem,2vw,1.55rem)}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.he{font-family:var(--display);direction:rtl}
+.eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:800}
+.lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--ink-2);max-width:62ch}
+.tbc{background:var(--tbc-bg);color:var(--tbc-fg);font-weight:700;padding:0 .4em;border-radius:3px;white-space:nowrap;font-family:var(--body);font-size:.85em}
+section{padding:clamp(64px,9vw,120px) 0}
+.sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(32px,4vw,56px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 .95rem var(--body);letter-spacing:.04em;padding:14px 26px;border-radius:var(--r);text-decoration:none;cursor:pointer;border:1.5px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.btn-brass{background:var(--brass);color:#fff}
+.btn-brass:hover{background:#86682a}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:#2c3a5c}
+:focus-visible{outline:3px solid var(--brass-2);outline-offset:2px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(31,42,68,.97);backdrop-filter:blur(8px);color:#fff}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand img{width:44px;height:auto}
+.brand b{font-family:var(--display);font-size:1.2rem;font-weight:700;display:block;line-height:1}
+.brand small{font-family:var(--display);font-size:.85rem;color:var(--brass-soft);display:block;line-height:1.2}
+.nav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:24px}
+.nav ul a{text-decoration:none;font-weight:600;font-size:.95rem;color:#d6dae3}
+.nav ul a:hover{color:#fff}
+.nav .btn{padding:10px 20px}
+.menu-btn{display:none;background:none;border:0;color:#fff;font:700 .9rem var(--body);letter-spacing:.08em;cursor:pointer;margin-left:auto;padding:8px}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--ink);overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,28,46,.92) 0%,rgba(20,28,46,.72) 42%,rgba(20,28,46,.15) 75%),linear-gradient(0deg,rgba(20,28,46,.6),transparent 40%)}
+.hero .wrap{position:relative;min-height:min(88vh,820px);display:flex;flex-direction:column;justify-content:center;gap:22px;padding-top:72px;padding-bottom:72px}
+.hero .he{font-size:1.35rem;color:var(--brass-soft);direction:rtl;align-self:flex-start}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);font-weight:900;max-width:13ch;line-height:1.02}
+.hero p{font-size:clamp(1.05rem,1.6vw,1.3rem);color:#dfe3ea;max-width:46ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.dedic{font-family:var(--display);font-size:.98rem;color:#c3c9d6;border-left:2px solid var(--brass);padding-left:12px}
+
+/* campaign bar (Mayanot-style goal / raised / donors) */
+.camp{background:var(--white);border-bottom:1px solid var(--line);position:relative;z-index:2}
+.camp .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr auto;gap:0;align-items:stretch}
+.camp .cell{padding:26px 24px;display:flex;flex-direction:column;gap:6px;border-left:1px solid var(--line)}
+.camp .cell:first-child{border-left:0;padding-left:0}
+.camp .k{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+.camp .v{font-family:var(--display);font-weight:900;font-size:clamp(1.6rem,2.8vw,2.3rem);line-height:1;font-variant-numeric:tabular-nums}
+.camp .v.brass{color:var(--brass)}
+.bar{height:10px;background:var(--stone);border-radius:99px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brass),var(--brass-2));border-radius:99px;transition:width 1.2s ease}
+.camp .cta{display:flex;align-items:center;padding-left:24px;border-left:1px solid var(--line)}
+
+/* story */
+.story{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,6vw,88px);align-items:start}
+.portrait{position:relative}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:var(--r)}
+.portrait figcaption{margin-top:12px;font-size:.9rem;color:var(--ink-3);font-style:italic}
+.letter{display:flex;flex-direction:column;gap:18px}
+.letter p{color:var(--ink-2);font-size:1.07rem}
+.letter em{font-style:italic;color:var(--ink)}
+.sig{font-family:var(--display);font-size:1.5rem;font-weight:700;margin-top:6px}
+.sig small{display:block;font-family:var(--body);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin-top:4px}
+.life{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(40px,5vw,64px)}
+.life figure{margin:0}
+.life img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+.life-cap{margin-top:16px;color:var(--ink-3);font-size:.95rem;max-width:80ch}
+.life-cap b{color:var(--ink)}
+
+/* today */
+.today{background:var(--ink);color:#fff}
+.today .eyebrow{color:var(--brass-soft)}
+.today .lead{color:#c9cfdb}
+.nums{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--navy-line);border-bottom:1px solid var(--navy-line);margin-top:8px}
+.nums div{padding:28px 20px;display:flex;flex-direction:column;gap:8px;border-left:1px solid var(--navy-line)}
+.nums div:first-child{border-left:0;padding-left:0}
+.nums b{font-family:var(--display);font-weight:900;font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1;color:var(--brass-soft);font-variant-numeric:tabular-nums}
+.nums span{color:#c9cfdb;font-size:.98rem;line-height:1.4}
+.today-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);margin-top:clamp(48px,6vw,80px);align-items:center}
+.quote{position:relative;padding-left:clamp(0px,3vw,36px)}
+.quote::before{content:"\201C";font-family:var(--display);font-size:7rem;line-height:.7;color:var(--brass);display:block;margin-bottom:8px}
+.quote p{font-family:var(--display);font-size:clamp(1.2rem,2vw,1.55rem);line-height:1.45}
+.quote footer{margin-top:18px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:#aab2c2;font-weight:700}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:1/0.85}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.mosaic img:first-child{grid-row:1/3}
+
+/* building */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:1px solid var(--line);margin-bottom:clamp(40px,5vw,64px)}
+.facts div{padding:24px 20px;display:flex;flex-direction:column;gap:6px;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{font-family:var(--display);font-weight:900;font-size:clamp(2rem,4vw,3rem);line-height:1;color:var(--brass);font-variant-numeric:tabular-nums}
+.facts span{color:var(--ink-2)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:28px}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;padding:12px 18px;font:700 .98rem var(--body);color:var(--ink-3);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--brass)}
+.tabs button:hover{color:var(--ink)}
+.space{display:none;grid-template-columns:1.6fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.space.on{display:grid}
+.space .shots{display:grid;gap:12px}
+.space .shots img{width:100%;border-radius:var(--r);cursor:zoom-in;background:var(--stone)}
+.space .shots.two{grid-template-columns:1.4fr 1fr;align-items:center}
+.space .copy{display:flex;flex-direction:column;gap:16px}
+.space .copy p{color:var(--ink-2)}
+.space .copy ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.space .copy li{padding-left:22px;position:relative;color:var(--ink-2)}
+.space .copy li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;background:var(--brass);transform:rotate(45deg)}
+.price-chip{align-self:flex-start;display:inline-flex;gap:10px;align-items:baseline;background:var(--ink);color:#fff;padding:12px 18px;border-radius:var(--r)}
+.price-chip b{font-family:var(--display);font-size:1.6rem;font-weight:900}
+.price-chip span{font-size:.9rem;color:#c9cfdb}
+
+/* site */
+.site{background:var(--stone)}
+.site-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.site-img{position:relative}
+.site-img img{width:100%;border-radius:var(--r)}
+.pin{position:absolute;left:16px;bottom:16px;background:var(--brass);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.timeline{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column}
+.timeline li{display:grid;grid-template-columns:22px 1fr;gap:14px;padding-bottom:18px;position:relative}
+.timeline li::before{content:"";width:12px;height:12px;border-radius:50%;border:2px solid var(--brass);background:var(--stone);margin-top:6px;margin-left:4px;z-index:1}
+.timeline li.done::before{background:var(--brass)}
+.timeline li:not(:last-child)::after{content:"";position:absolute;left:10px;top:20px;bottom:0;width:2px;background:#d4c7aa}
+.timeline b{display:block}
+.timeline span{color:var(--ink-2);font-size:.95rem}
+
+/* dedications */
+.ded-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.ded-filter button{background:var(--white);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font:700 .9rem var(--body);color:var(--ink-2);cursor:pointer}
+.ded-filter button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.ded-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line)}
+.ded-table th{text-align:left;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);padding:14px 20px;border-bottom:2px solid var(--ink);font-weight:800}
+.ded-table td{padding:16px 20px;border-bottom:1px solid var(--line);vertical-align:middle}
+.ded-table tr.tier td{background:var(--paper);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:800;padding:12px 20px}
+.ded-table .name b{font-family:var(--display);font-size:1.15rem;font-weight:700;display:block}
+.ded-table .name small{color:var(--ink-3)}
+.ded-table .amt{font-family:var(--display);font-weight:700;font-size:1.2rem;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ded-table .status{white-space:nowrap}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;padding:4px 9px;border-radius:3px}
+.tag.av{background:#e6efe3;color:#2f5a2a}
+.tag.sold{background:#ece7dd;color:#7b7262}
+.ded-table .act{text-align:right;width:1%}
+.ded-table .act .btn{padding:9px 16px;font-size:.85rem}
+.ded-table tr.is-sold .name b,.ded-table tr.is-sold .amt{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1px}
+.ded-note{margin-top:18px;color:var(--ink-3);font-size:.95rem}
+
+/* haskamot */
+.hask{background:var(--white)}
+.hask-top{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,72px);align-items:center;margin-bottom:clamp(40px,5vw,64px)}
+.hask-top img{width:100%;border-radius:var(--r)}
+.hask-top figcaption{margin-top:10px;font-size:.9rem;color:var(--ink-3);font-style:italic}
+.hask-top blockquote{margin:0;font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.38}
+.hask-top blockquote em{font-style:normal;color:var(--brass)}
+.hask-top cite{display:block;margin-top:18px;font-style:normal;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:800}
+.scans{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.scans button{all:unset;cursor:zoom-in;display:flex;flex-direction:column;gap:10px}
+.scans img{width:100%;aspect-ratio:3/4;object-fit:contain;background:#fff;padding:6px;border:1px solid var(--line);box-shadow:0 2px 10px rgba(31,42,68,.08);transition:transform .15s,box-shadow .15s}
+.scans button:hover img,.scans button:focus-visible img{transform:translateY(-3px);box-shadow:0 8px 20px rgba(31,42,68,.14)}
+.scans span{font-family:var(--display);font-weight:700;font-size:.95rem;line-height:1.25}
+.also{margin-top:24px;color:var(--ink-3);font-size:.95rem}
+
+/* give */
+.give{background:var(--ink);color:#fff}
+.give .eyebrow{color:var(--brass-soft)}
+.give .lead{color:#c9cfdb}
+.give-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.way{background:rgba(255,255,255,.05);border-top:3px solid var(--brass);padding:28px;display:flex;flex-direction:column;gap:10px;border-radius:0 0 var(--r) var(--r)}
+.way h3{color:#fff}
+.way p{color:#c9cfdb}
+.way .num{font-family:var(--display);color:#fff;font-size:1.2rem;overflow-wrap:anywhere}
+.way .btn{align-self:flex-start;margin-top:auto}
+.copy-btn{background:none;border:1px solid var(--navy-line);color:#d6dae3;font:700 .8rem var(--body);padding:6px 10px;border-radius:3px;cursor:pointer;align-self:flex-start}
+.copy-btn:hover{border-color:var(--brass-soft);color:#fff}
+.give-lower{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.panel{border:1px solid var(--navy-line);padding:28px;border-radius:var(--r);display:flex;flex-direction:column;gap:12px}
+.panel h3{color:#fff}
+.panel p{color:#c9cfdb}
+.bank{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bank small{display:block;color:#aab2c2;font-size:.85rem}
+.bank b{font-family:var(--display);font-size:1.1rem;font-weight:500;color:#fff}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(40px,5vw,64px);padding-top:32px;border-top:1px solid var(--navy-line)}
+.contact small{display:block;color:#aab2c2;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:4px}
+.contact a{font-family:var(--display);font-size:1.3rem;text-decoration:none;color:#fff}
+.contact a:hover{color:var(--brass-soft)}
+
+footer.site-foot{background:#172036;color:#aab2c2;padding:36px 0;font-size:.92rem}
+footer.site-foot .wrap{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+footer.site-foot img{width:52px}
+footer.site-foot p+p{margin-top:4px}
+
+/* lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(94vw,1200px);max-height:92vh}
+dialog.lb::backdrop{background:rgba(12,16,28,.88)}
+dialog.lb img{max-width:100%;max-height:86vh;object-fit:contain;margin:0 auto;background:#fff}
+dialog.lb p{color:#fff;text-align:center;margin-top:10px;font-family:var(--display)}
+dialog.lb button{position:fixed;top:16px;right:20px;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
+
+/* modal for dedicating */
+dialog.dd{border:0;border-radius:6px;padding:0;max-width:520px;width:calc(100% - 32px);color:var(--ink)}
+dialog.dd::backdrop{background:rgba(12,16,28,.7)}
+.dd-in{padding:32px;display:flex;flex-direction:column;gap:14px}
+.dd-in h3{font-size:1.6rem}
+.dd-in .amt{font-family:var(--display);font-weight:900;font-size:2.2rem;color:var(--brass);line-height:1}
+.dd-in p{color:var(--ink-2)}
+.dd-opts{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.dd-opts .btn{width:100%}
+.dd-close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--ink-3)}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.bar i{transition:none}}
+
+@media (max-width:1000px){
+  .nav ul{display:none}
+  .nav.open ul{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--ink);padding:8px 24px 20px;border-top:1px solid var(--navy-line)}
+  .nav.open ul a{display:block;padding:12px 0;font-size:1.05rem}
+  .menu-btn{display:block}
+  .nav .btn{display:none}
+  .camp .wrap{grid-template-columns:1fr 1fr 1fr}
+  .camp .cell:first-child{grid-column:1/-1;padding:22px 0 8px;border-bottom:0}
+  .camp .cell:nth-child(2){border-left:0;padding-left:0}
+  .camp .cta{grid-column:1/-1;border-left:0;padding:0 0 22px}
+  .camp .cta .btn{width:100%}
+  .nums{grid-template-columns:repeat(3,1fr)}
+  .nums div:nth-child(4){border-left:0;padding-left:0}
+  .nums div:nth-child(n+4){border-top:1px solid var(--navy-line)}
+  .scans{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .hero-img::after{background:linear-gradient(0deg,rgba(20,28,46,.95) 0%,rgba(20,28,46,.75) 55%,rgba(20,28,46,.25) 100%)}
+  .hero .wrap{justify-content:flex-end;min-height:86vh}
+  .camp .v{font-size:1.4rem}
+  .camp .cell{padding:16px 12px}
+  .story,.today-grid,.space.on,.site-grid,.hask-top,.give-lower{grid-template-columns:1fr}
+  .portrait{max-width:340px}
+  .life{grid-template-columns:1fr 1fr}
+  .nums{grid-template-columns:1fr 1fr}
+  .nums div{border-left:0!important;padding-left:0!important;border-top:1px solid var(--navy-line)}
+  .nums div:nth-child(-n+2){border-top:0}
+  .nums div:nth-child(even){padding-left:16px!important;border-left:1px solid var(--navy-line)!important}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts div:nth-child(3){border-left:0;padding-left:0}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .space .shots.two{grid-template-columns:1fr}
+  .give-grid,.contact,.bank{grid-template-columns:1fr}
+  .scans{grid-template-columns:1fr 1fr}
+  .ded-table thead{display:none}
+  .ded-table,.ded-table tbody,.ded-table tr,.ded-table td{display:block;width:100%}
+  .ded-table tr:not(.tier){display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:16px;border-bottom:1px solid var(--line)}
+  .ded-table td{border:0;padding:0}
+  .ded-table tr.tier td{padding:10px 16px}
+  .ded-table .name{grid-column:1}
+  .ded-table .amt{grid-column:2;grid-row:1;align-self:start}
+  .ded-table .status{grid-column:1}
+  .ded-table .act{grid-column:2;grid-row:2;width:auto}
+}
 </style>
 </head>
 <body>
 
-<nav><div class="wrap">
-  <a class="brand" href="#">Peer Hatalmud <span>פאר התלמוד</span></a>
-  <a class="btn" href="#give">Donate</a>
-</div></nav>
-
-<header class="hero"><div class="wrap">
-  <div class="he" lang="he" dir="rtl">מוסדות פאר התלמוד · ירושלים</div>
-  <h1>Every boy deserves a place to belong.</h1>
-  <p>Peer Hatalmud in Jerusalem gives boys who couldn't find their place elsewhere a warm, fatherly home for Torah learning, and a real road back to success.</p>
-  <div class="ctas">
-    <a class="btn" href="#give">Give today</a>
-    <a class="btn ghost" href="#story">Our story</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/emblem-white.png" alt=""><span><b>Peer Hatalmud</b><small class="he">מוסדות פאר התלמוד</small></span></a>
+    <ul id="menu">
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#building">The building</a></li>
+      <li><a href="#dedicate">Dedicate</a></li>
+      <li><a href="#haskamot">Haskamot</a></li>
+      <li><a href="#give">How to give</a></li>
+    </ul>
+    <a class="btn btn-brass" href="#give">Donate</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" id="menuBtn">MENU</button>
   </div>
-</div></header>
+</nav>
 
-<section id="story"><div class="wrap split">
-  <div>
-    <div class="eyebrow">Background</div>
-    <h2>A lifesaver for boys who fell through the cracks</h2>
-    <p>Peer Hatalmud was founded to care for young men who, for personal, family or emotional reasons, need specialized, warm and dedicated attention, and to keep them from the negative influences of the street that can lead them away from Torah observance.</p>
-    <p>Our students came from other schools where they couldn't adjust to a cold, stern atmosphere. Here, a faculty of dedicated teachers keeps a warm, fatherly relationship with every boy, building the trust, self-confidence and pride he needs to succeed.</p>
+<header class="hero" id="top">
+  <div class="hero-img"><img src="img/ext1.jpg" alt="Rendering of the new Peer Hatalmud building in Jerusalem stone, with a tall arched glass entrance"></div>
+  <div class="wrap">
+    <div class="he" lang="he">מוסדות פאר התלמוד · ירושלים</div>
+    <div class="eyebrow" style="color:var(--brass-soft)">The Peer Hatalmud Building Campaign</div>
+    <h1>A New Home for Our Torah, a Future for Our Boys</h1>
+    <p>A beit midrash, a dining hall and 30 students' rooms under one roof in Ramat Shlomo, Jerusalem. A permanent home for boys who have found their place in Torah.</p>
+    <div class="ctas">
+      <a class="btn btn-brass" href="#dedicate">Dedicate a space</a>
+      <a class="btn btn-line" href="#building">See the building</a>
+    </div>
+    <p class="dedic">Founded in memory of HaRav HaTzaddik R' Khany Darshan zt”l</p>
   </div>
-  <img src="images/classroom.jpg" alt="Students learning in the Peer Hatalmud beit midrash">
-</div></section>
+</header>
 
-<section class="alt"><div class="wrap">
-  <div class="eyebrow">Our success</div>
-  <h2>Proof that warmth works</h2>
-  <div class="stats">
-    <div class="stat"><b>200+</b><span>students nurtured over the years</span></div>
-    <div class="stat"><b>50</b><span>boys learning with us today</span></div>
-    <div class="stat"><b>100%</b><span>of graduates continued to mainstream yeshivot</span></div>
+<!-- Campaign figures. Fill in CAMPAIGN in the script at the bottom; empty values show a TBC tag. -->
+<div class="camp" aria-label="Campaign progress">
+  <div class="wrap">
+    <div class="cell">
+      <span class="k">Raised so far</span>
+      <span class="v brass" data-camp="raised"></span>
+      <div class="bar" role="progressbar" aria-label="Share of the goal raised" aria-valuemin="0" aria-valuemax="100" id="campBar"><i></i></div>
+    </div>
+    <div class="cell"><span class="k">Campaign goal</span><span class="v" data-camp="goal"></span></div>
+    <div class="cell"><span class="k">Of goal</span><span class="v" data-camp="pct"></span></div>
+    <div class="cell"><span class="k">Partners</span><span class="v" data-camp="donors"></span></div>
+    <div class="cta"><a class="btn btn-ink" href="#dedicate">Become a partner</a></div>
   </div>
-  <p style="margin-top:28px;max-width:70ch">Every boy who completed our three-year curriculum went on to a mainstream yeshiva and an unparalleled road of success. Many have since built families of their own in Israel.</p>
-</div></section>
+</div>
 
-<section><div class="wrap">
-  <div class="eyebrow">How we help</div>
-  <h2>More than a classroom</h2>
-  <div class="cards">
-    <div class="card"><h3>Building character</h3><p>A creative, warm and uplifting home that shapes each boy's personality and gives him confidence for life.</p></div>
-    <div class="card"><h3>Personal mentors</h3><p>A high teacher-to-student ratio and personal mentors for every boy who needs special attention.</p></div>
-    <div class="card"><h3>Meals & lodging</h3><p>Three hot meals a day and a place to sleep, so no boy's physical needs stand in the way of his growth.</p></div>
-    <div class="card"><h3>Facing adolescence</h3><p>Spiritual guides who act as mentors and, when needed, a stand-in for parents.</p></div>
-    <div class="card"><h3>Learning beyond the day</h3><p>Shiurim for new olim and children, a Friday and Shabbat kollel, an evening kollel, and a chesed organization.</p></div>
-    <div class="card"><h3>Lasting independence</h3><p>We stabilize each student's soul so he can stand on his own for the rest of his life.</p></div>
-  </div>
-</div></section>
+<main>
 
-<section class="alt"><div class="wrap split">
-  <div>
-    <div class="eyebrow">Leadership</div>
-    <h2>Rabbi Yosef Darshan, Rosh Yeshiva</h2>
-    <p>Rabbi Darshan brings many years of experience with boys like ours. He is known for his extreme dedication and love for his students and for the great lengths he goes to for their success, all of which comes naturally to him out of love for his students, community and congregation.</p>
-    <p style="color:var(--muted)">Founded in memory of Chany Darshan, o.b.m.</p>
+<!-- Letter from the Rosh Yeshiva -->
+<section id="story">
+  <div class="wrap">
+    <div class="story reveal">
+      <figure class="portrait" style="margin:0">
+        <img src="img/rosh.jpg" alt="Rabbi Yosef Darshan, Rosh Yeshiva of Peer Hatalmud">
+        <figcaption>HaRav Yosef Darshan shlita, Rosh Yeshiva</figcaption>
+      </figure>
+      <div class="letter">
+        <div class="eyebrow">Kol Korei · A call from the heart</div>
+        <h2>Fortunate is the one who takes part in this mitzvah</h2>
+        <p>We turn to you from the depths of our hearts on behalf of Mosdot Peer Hatalmud in Jerusalem. Our aim is to educate Jewish boys who thirst for the word of Hashem and long for Torah, yirat shamayim and good middot. Reaching them takes a warm heart that understands what they lack and fills that gap with feeling, raising them step by step.</p>
+        <p>For this we chose a devoted, warm staff who can reach the depths of their hearts and lift their spirits with gentle hands. Thank G-d, many knock on our doors, and many boys now breathe freely in an atmosphere of Torah, “like cold water to a weary soul.”</p>
+        <p>But <em>im ein kemach, ein Torah</em>. Caring for our boys in body and soul, with three hot meals every day, carries great costs.</p>
+        <p>Now we ask you to help us build a permanent home for these boys: a beit midrash, a dining room and rooms where they can live and grow, under one roof. May Hashem fulfil all your heart's wishes for good.</p>
+        <div class="sig">Rabbi Yosef Darshan<small>Rosh HaYeshiva</small></div>
+      </div>
+    </div>
+    <div class="life reveal">
+      <figure><img src="img/r-maran.jpg" alt="Maran Rabbi Ovadia Yosef speaking at a Peer Hatalmud event" loading="lazy"></figure>
+      <figure><img src="img/r-elder.jpg" alt="The Rosh Yeshiva with a senior Rav in the yeshiva" loading="lazy" style="object-position:50% 30%"></figure>
+      <figure><img src="img/r-mezuzah.jpg" alt="A Rav affixing a mezuzah at the yeshiva" loading="lazy" style="object-position:50% 40%"></figure>
+      <figure><img src="img/r-standing.jpg" alt="The Rosh Yeshiva standing with a fellow Rav" loading="lazy" style="object-position:50% 20%"></figure>
+    </div>
+    <p class="life-cap"><b>A lifetime of dedication to teaching Torah.</b> HaRav Yosef Darshan has devoted his entire life to raising boys in Torah, alongside the Gedolei Yisrael of the generation, among them Maran HaRav Ovadia Yosef zt”l.</p>
   </div>
-  <div>
-    <blockquote>“Six years have passed like a flash of light… The first place where I felt someone truly understood my feelings was here. What I received from you, I could not have received anywhere else.”</blockquote>
-    <div class="quote-by">A former student, in a letter to the Rosh Yeshiva</div>
-  </div>
-</div></section>
+</section>
 
-<section id="give" class="give"><div class="wrap">
-  <div class="eyebrow">Partner with us</div>
-  <h2>אם אין קמח אין תורה: without bread, there is no Torah</h2>
-  <p style="max-width:68ch">A framework like ours is costly. Personal mentors, a high staff ratio, food and facilities all add up, and recent government budget cuts have left the yeshiva in debt. We ask everyone who believes in these boys to help keep their future bright.</p>
-  <div class="tiers">
-    <div class="tier"><b>$36</b><span>Hot meals for a student for a week</span></div>
-    <div class="tier"><b>$180</b><span>A month of personal mentoring</span></div>
-    <div class="tier"><b>$500</b><span>Dedicate a day of learning</span></div>
-    <div class="tier"><b>$1,800</b><span>Sponsor a boy for a semester</span></div>
+<!-- Peer Hatalmud today -->
+<section class="today" id="today">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Founded 5760 (2000) · Jerusalem</div>
+      <h2>Where every boy finds his place in Torah</h2>
+      <p class="lead">Peer Hatalmud takes in boys who left other schools for personal, family or emotional reasons. A devoted staff gives each one structure with the warmth of a father, a personal mentor, three hot meals a day and a place to sleep, until he can stand on his own. Every boy who completed the three-year program went on to a mainstream yeshiva, and today the great yeshivot ask for Peer Hatalmud students.</p>
+    </div>
+    <div class="nums reveal">
+      <div><b>80</b><span>talmidim, ages 14 to 17, learning all day</span></div>
+      <div><b>35</b><span>married men in the full-day kollel</span></div>
+      <div><b>65</b><span>men in the evening kollel</span></div>
+      <div><b>25</b><span>men in the Friday kollel</span></div>
+      <div><b>104</b><span>families in need supported by our chesed organization</span></div>
+    </div>
+    <div class="today-grid">
+      <blockquote class="quote reveal" style="margin:0">
+        <p>The Rosh Yeshiva surely remembers how I looked at my entrance exam, my heart broken from my previous schools. Three years passed at the speed of light, and the sun rose for me. The first place I ever felt someone shared my pain and stood by me in my hardest hours was here. Now I stand on my own feet.</p>
+        <footer>G.B.Ch., a graduate, in a letter to the Rosh Yeshiva</footer>
+      </blockquote>
+      <div class="mosaic reveal">
+        <img src="img/p-seder.jpg" alt="Talmidim learning in the beit midrash during seder" loading="lazy">
+        <img src="img/p-shiur.jpg" alt="The Rosh Yeshiva giving a shiur" loading="lazy">
+        <img src="img/p-kollel.jpg" alt="Kollel members learning at their shtenders" loading="lazy">
+      </div>
+    </div>
   </div>
-  <p class="note">Your gift can be dedicated in memory or in honor of family and friends.</p>
-  <h3 style="margin-top:36px">Give by bank transfer (Israel)</h3>
-  <p class="note">Mosdot "Peer Hatalmud" · Amuta no. 58-016861-5</p>
-  <div class="bank">
-    <div><small>Bank Hadoar (Postal Bank)</small>Branch 103 · Account 3520978</div>
-    <div><small>Bank Massad</small>Branch 166 · Account 420859</div>
+</section>
+
+<!-- The building, space by space -->
+<section id="building">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">The new building · Ramat Shlomo, Jerusalem</div>
+      <h2>Everything under one roof</h2>
+      <p class="lead">The new building brings the whole yeshiva together: learning, meals and a place to live, in one home of Jerusalem stone.</p>
+    </div>
+    <div class="facts reveal">
+      <div><b>1,500</b><span>m² of Jerusalem stone</span></div>
+      <div><b>120</b><span>seats in the Beit Midrash</span></div>
+      <div><b>4</b><span>large classrooms</span></div>
+      <div><b>30</b><span>students' rooms, 120 beds</span></div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Spaces in the new building">
+      <button role="tab" aria-selected="true" aria-controls="sp-bm" id="tab-bm">Beit Midrash</button>
+      <button role="tab" aria-selected="false" aria-controls="sp-din" id="tab-din" tabindex="-1">Dining hall</button>
+      <button role="tab" aria-selected="false" aria-controls="sp-room" id="tab-room" tabindex="-1">Students' rooms</button>
+      <button role="tab" aria-selected="false" aria-controls="sp-ext" id="tab-ext" tabindex="-1">The building</button>
+    </div>
+
+    <div class="space on" id="sp-bm" role="tabpanel" aria-labelledby="tab-bm">
+      <div class="shots">
+        <img src="img/bm1.jpg" alt="Rendering of the new beit midrash with tall windows and a carved wooden Aron Kodesh" data-lb>
+        <img src="img/bm2.jpg" alt="Second rendering of the beit midrash, with bookcases of sefarim" loading="lazy" data-lb>
+      </div>
+      <div class="copy">
+        <h3>The Beit Midrash</h3>
+        <p>The heart of the yeshiva: a bright hall with room for 120 to learn all day, a carved wooden Aron Kodesh and sefarim lining the walls.</p>
+        <ul><li>120 seats and shtenders</li><li>Aron Kodesh and bimah</li><li>A library of sefarim all around</li></ul>
+        <div class="price-chip"><b>$540,000</b><span>to dedicate the Beit Midrash</span></div>
+      </div>
+    </div>
+
+    <div class="space" id="sp-din" role="tabpanel" aria-labelledby="tab-din">
+      <div class="shots two">
+        <img src="img/dining.jpg" alt="Rendering of the new dining hall" loading="lazy" data-lb>
+        <img src="img/dining-top.webp" alt="Rendering of the dining hall from above, with rows of tables and serving stations" loading="lazy" data-lb>
+      </div>
+      <div class="copy">
+        <h3>The dining hall</h3>
+        <p>Three hot meals every day, for boys whose physical needs must never stand in the way of their growth. A warm room where the yeshiva sits together as a family.</p>
+        <ul><li>Seating for the whole yeshiva</li><li>A full kitchen</li><li>Three serving stations</li></ul>
+        <div class="price-chip"><b>$360,000</b><span>to dedicate the dining hall</span></div>
+      </div>
+    </div>
+
+    <div class="space" id="sp-room" role="tabpanel" aria-labelledby="tab-room">
+      <div class="shots two">
+        <img src="img/room.jpg" alt="Rendering of a students' room: four beds, tall wooden closets and a desk under the window" loading="lazy" data-lb>
+        <img src="img/room2.webp" alt="Top-down rendering of a students' room with four beds, a desk, closets and a private bathroom" loading="lazy" data-lb>
+      </div>
+      <div class="copy">
+        <h3>A room of his own</h3>
+        <p>For many of our boys, the yeshiva is the only stable home they have. Each of the 30 new rooms gives four boys a calm and warm place to live.</p>
+        <ul><li>Four beds, each with a reading lamp</li><li>Wooden closets and a shelf of sefarim</li><li>A desk for learning</li><li>A private shower and bathroom</li></ul>
+        <div class="price-chip"><b>$40,000</b><span>dedicates a room, with your name on the door</span></div>
+      </div>
+    </div>
+
+    <div class="space" id="sp-ext" role="tabpanel" aria-labelledby="tab-ext">
+      <div class="shots two">
+        <img src="img/ext2.jpg" alt="Rendering of the new building in Jerusalem stone" loading="lazy" data-lb>
+        <img src="img/aron.jpg" alt="The carved wooden Aron Kodesh in the new beit midrash" loading="lazy" data-lb>
+      </div>
+      <div class="copy">
+        <h3>A home of Jerusalem stone</h3>
+        <p>1,500 m² over several floors, with an entrance and lobby, four classrooms, a library, the Beit Midrash, the dining hall and kitchen, and the students' rooms.</p>
+        <div class="price-chip"><b>$1,800,000</b><span>to name the building</span></div>
+      </div>
+    </div>
   </div>
-  <p class="note" style="margin-top:28px">To give by card or arrange a dedication, call <a href="tel:+97225824010" style="color:#d9b56c">02-582-4010</a>.</p>
-</div></section>
+</section>
 
-<footer><div class="wrap">
-  <div><strong>Peer Hatalmud Institution</strong><br>13 Rechov Polansky, Jerusalem · P.O.B. 5744, Jerusalem 91057</div>
-  <div>Tel/Fax: 02-582-4010<br>Endorsed by leading Gedolim and Batei Din in Jerusalem</div>
-</div></footer>
+<!-- The site and progress -->
+<section class="site" id="site">
+  <div class="wrap site-grid">
+    <div class="site-img reveal">
+      <img src="img/site-clean.jpg" alt="Aerial photo of the building site in Ramat Shlomo, beside the road and the neighbourhood's houses" loading="lazy">
+      <span class="pin">The site</span>
+    </div>
+    <div class="reveal" style="display:flex;flex-direction:column;gap:16px">
+      <div class="eyebrow">The site</div>
+      <h2>Ramat Shlomo, Jerusalem</h2>
+      <p class="lead">On Rechov Shlomo Zalman Druk, in the heart of a growing Torah neighbourhood.</p>
+      <ol class="timeline">
+        <li class="done"><span><b>Plot allocated</b>Allocation plan issued</span></li>
+        <li><span><b>Permits and planning</b><span class="tbc">date TBC</span></span></li>
+        <li><span><b>Groundbreaking</b><span class="tbc">date TBC</span></span></li>
+        <li><span><b>Doors open to our boys</b><span class="tbc">date TBC</span></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
 
+<!-- Dedications -->
+<section id="dedicate">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Hantzacha · Dedication opportunities</div>
+      <h2>Your name in the walls of a yeshiva</h2>
+      <p class="lead">Every dedication can honour a loved one or be made in their memory, and is marked with a plaque in the building.</p>
+    </div>
+    <div class="ded-filter" role="group" aria-label="Filter dedications">
+      <button aria-pressed="true" data-f="all">All</button>
+      <button aria-pressed="false" data-f="major">Major dedications</button>
+      <button aria-pressed="false" data-f="rooms">Rooms and spaces</button>
+      <button aria-pressed="false" data-f="friend">For every friend</button>
+    </div>
+    <table class="ded-table">
+      <thead><tr><th>Dedication</th><th>Status</th><th style="text-align:right">Amount</th><th><span class="sr" style="position:absolute;left:-9999px">Action</span></th></tr></thead>
+      <tbody id="dedBody"></tbody>
+    </table>
+    <p class="ded-note">Prices in US dollars. To reserve a dedication, press Dedicate and we will be in touch to arrange the details and the wording of your plaque.</p>
+  </div>
+</section>
+
+<!-- Haskamot -->
+<section class="hask" id="haskamot">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Michtavei bracha · Haskamot</div>
+      <h2>With the blessing of Gedolei Yisrael</h2>
+    </div>
+    <div class="hask-top reveal">
+      <figure style="margin:0"><img src="img/oy-photo.jpg" alt="Maran Rabbi Ovadia Yosef with Rabbi Yosef Darshan" loading="lazy"><figcaption>Maran HaRav Ovadia Yosef zt”l with the Rosh Yeshiva</figcaption></figure>
+      <blockquote>“I warmly recommend the yeshiva Peer Hatalmud, which rescues precious boys yearning for the gates of our holy <em>Torah</em>, led by HaRav Yosef Darshan. It is a great mitzvah to help them generously, and all who help will be blessed from Hashem.”<cite>Maran Rabbi Ovadia Yosef zt”l, Rishon LeZion</cite></blockquote>
+    </div>
+    <div class="scans reveal">
+      <button data-lb-src="img/l-oy.jpg" data-lb-cap="Maran Rabbi Ovadia Yosef zt”l"><img src="img/l-oy.jpg" alt="Letter of recommendation from Rabbi Ovadia Yosef" loading="lazy"><span>Maran Rabbi Ovadia Yosef zt”l</span></button>
+      <button data-lb-src="img/l-eliyahu.jpg" data-lb-cap="Rabbi Mordechai Eliyahu zt”l"><img src="img/l-eliyahu.jpg" alt="Letter of recommendation from Rabbi Mordechai Eliyahu" loading="lazy"><span>Rabbi Mordechai Eliyahu zt”l</span></button>
+      <button data-lb-src="img/l-batzri.jpg" data-lb-cap="HaMekubal Rabbi David Batzri"><img src="img/l-batzri.jpg" alt="Letter of recommendation from Rabbi David Batzri" loading="lazy"><span>HaMekubal Rabbi David Batzri</span></button>
+      <button data-lb-src="img/l-badatz.jpg" data-lb-cap="Beit Din of the Eda HaCharedit"><img src="img/l-badatz.jpg" alt="Approval from the Beit Din of the Eda HaCharedit" loading="lazy"><span>Beit Din of the Eda HaCharedit</span></button>
+      <button data-lb-src="img/l-bd-sephardi.jpg" data-lb-cap="Beit Din Tzedek, Sephardi Eda HaCharedit"><img src="img/l-bd-sephardi.jpg" alt="Letter from the Sephardic Beth Din Zedek" loading="lazy"><span>Beit Din Tzedek, Sephardi Eda HaCharedit</span></button>
+      <button data-lb-src="img/l-bd-ortho.jpg" data-lb-cap="Beit Din Tzedek of the Orthodox Community"><img src="img/l-bd-ortho.jpg" alt="Letter from the Beth Din Zedek of the Orthodox Community" loading="lazy"><span>Beit Din Tzedek of the Orthodox Community</span></button>
+    </div>
+    <p class="also">Also recommended by Rabbi Chaim Kanievsky zt”l and Rabbi Ari Abraham Smadja, Rav of Ramat Shlomo.</p>
+  </div>
+</section>
+
+<!-- How to give -->
+<section class="give" id="give">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow he" style="direction:rtl;align-self:flex-start;letter-spacing:0;font-size:1.1rem;font-weight:500">אם אין קמח אין תורה</div>
+      <h2>Partner with us</h2>
+      <p class="lead">Fortunate is the one who takes part in this great mitzvah of spreading Torah among these precious boys. May all who help be blessed without end.</p>
+    </div>
+    <div class="give-grid reveal">
+      <div class="way">
+        <h3>Zelle</h3>
+        <p>Send to</p>
+        <p class="num">peerhatalmud@gmail.com</p>
+        <button class="copy-btn" data-copy="peerhatalmud@gmail.com">Copy address</button>
+      </div>
+      <div class="way">
+        <h3>Online by card</h3>
+        <p>Give securely by credit card.</p>
+        <p class="num"><span class="tbc">donation link TBC</span></p>
+        <a class="btn btn-brass" href="#give" aria-disabled="true">Donate online</a>
+      </div>
+      <div class="way">
+        <h3>By check</h3>
+        <p>Payable to Mosdot Peer Hatalmud, mailed to</p>
+        <p class="num">P.O.B. 5744<br>Jerusalem 91057, Israel</p>
+      </div>
+    </div>
+    <div class="give-lower reveal">
+      <div class="panel">
+        <h3>Bank transfer in Israel</h3>
+        <div class="bank">
+          <div><small>Bank Hadoar (Postal Bank)</small><b>Branch 103 · Acc. 3520978</b></div>
+          <div><small>Bank Massad</small><b>Branch 166 · Acc. 420859</b></div>
+        </div>
+        <p style="font-size:.92rem">Mosdot “Peer Hatalmud” · Amuta no. 58-016861-5</p>
+      </div>
+      <div class="panel">
+        <h3>Yissachar and Zevulun</h3>
+        <p>Support a member of the Peer Hatalmud Kollel each month and share in the merit of his learning, through a signed agreement with the Rosh Yeshiva.</p>
+        <a class="btn btn-line" style="align-self:flex-start" href="mailto:peerhatalmud@gmail.com?subject=Yissachar%20and%20Zevulun%20partnership">Ask about a partnership</a>
+      </div>
+    </div>
+    <div class="contact reveal">
+      <div><small>Email</small><a href="mailto:peerhatalmud@gmail.com">peerhatalmud@gmail.com</a></div>
+      <div><small>United States</small><a href="tel:+14245222492">+1 (424) 522-2492</a></div>
+      <div><small>Israel</small><a href="tel:+972587114924">+972 58-711-4924</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <img src="img/emblem-white.png" alt="Peer Hatalmud emblem">
+    <div>
+      <p>Mosdot Peer Hatalmud · 13 Rechov Polansky, Jerusalem · P.O.B. 5744, Jerusalem 91057 · Tel/Fax 02-582-4010</p>
+      <p>Founded in memory of HaRav HaTzaddik R' Khany Darshan zt”l</p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb"><button aria-label="Close" id="lbClose">×</button><img alt="" id="lbImg"><p id="lbCap"></p></dialog>
+
+<dialog class="dd" id="dd">
+  <button class="dd-close" aria-label="Close" id="ddClose">×</button>
+  <div class="dd-in">
+    <div class="eyebrow">Dedicate</div>
+    <h3 id="ddName"></h3>
+    <div class="amt" id="ddAmt"></div>
+    <p>Let us know you would like this dedication and we will contact you to arrange payment, pledge terms and the wording of the plaque.</p>
+    <div class="dd-opts">
+      <a class="btn btn-brass" id="ddMail" href="#">Email us to reserve</a>
+      <a class="btn btn-ink" id="ddWa" href="#" target="_blank" rel="noopener">Message on WhatsApp</a>
+      <a class="btn" style="border-color:var(--line)" href="tel:+14245222492">Call +1 (424) 522-2492</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* ---------- Edit these ---------- */
+// Campaign figures in US dollars. Leave as null to show "TBC".
+const CAMPAIGN = { goal: null, raised: null, donors: null };
+
+// Dedications. Set sold: true when a dedication is taken, or "left" to how many remain.
+const DEDICATIONS = [
+  { group:"major",  name:"Naming the building",      amount:1800000 },
+  { group:"major",  name:"The Beit Midrash",         amount:540000, note:"120 seats" },
+  { group:"major",  name:"Dining hall",              amount:360000 },
+  { group:"major",  name:"Aron Kodesh",              amount:180000 },
+  { group:"major",  name:"Kitchen",                  amount:180000 },
+  { group:"major",  name:"Entrance and lobby",       amount:126000 },
+  { group:"major",  name:"Cornerstone",              amount:100000 },
+  { group:"rooms",  name:"Classroom",                amount:72000, of:4 },
+  { group:"rooms",  name:"Library",                  amount:54000 },
+  { group:"rooms",  name:"Students' room",           amount:40000, of:30, note:"4 beds, with a plaque on the door" },
+  { group:"rooms",  name:"Bed in a students' room",  amount:10000, of:120 },
+  { group:"friend", name:"Seat in the Beit Midrash", amount:1800, of:120 },
+  { group:"friend", name:"Mezuzah",                  amount:1000 },
+  { group:"friend", name:"Name on the donor wall",   amount:500 }
+];
+const WHATSAPP = "972587114924";
+const EMAIL = "peerhatalmud@gmail.com";
+/* -------------------------------- */
+
+const usd = n => "$" + n.toLocaleString("en-US");
+const tbc = '<span class="tbc">TBC</span>';
+
+// campaign bar
+(function(){
+  const {goal,raised,donors} = CAMPAIGN;
+  const set = (k,v) => document.querySelector(`[data-camp="${k}"]`).innerHTML = v;
+  set("goal",   goal   != null ? usd(goal) : tbc);
+  set("raised", raised != null ? usd(raised) : tbc);
+  set("donors", donors != null ? donors.toLocaleString("en-US") : tbc);
+  const pct = goal && raised != null ? Math.min(100, Math.round(raised/goal*100)) : null;
+  set("pct", pct != null ? pct + "%" : tbc);
+  const bar = document.getElementById("campBar");
+  bar.setAttribute("aria-valuenow", pct || 0);
+  requestAnimationFrame(()=>setTimeout(()=>bar.firstElementChild.style.width=(pct||0)+"%",200));
+})();
+
+// dedication table
+const GROUPS = { major:"Major dedications", rooms:"Rooms and spaces", friend:"For every friend" };
+const body = document.getElementById("dedBody");
+function renderDed(filter){
+  body.innerHTML = "";
+  for (const g of Object.keys(GROUPS)){
+    if (filter !== "all" && filter !== g) continue;
+    body.insertAdjacentHTML("beforeend", `<tr class="tier"><td colspan="4">${GROUPS[g]}</td></tr>`);
+    DEDICATIONS.filter(d=>d.group===g).forEach((d,i)=>{
+      const left = d.sold ? 0 : (d.left ?? d.of);
+      const status = d.sold ? '<span class="tag sold">Dedicated</span>'
+                   : `<span class="tag av">${left ? left + (d.of ? " of " + d.of : "") + " available" : "Available"}</span>`;
+      const idx = DEDICATIONS.indexOf(d);
+      body.insertAdjacentHTML("beforeend",
+        `<tr class="${d.sold?'is-sold':''}">
+          <td class="name"><b>${d.name}</b>${d.note?`<small>${d.note}</small>`:""}</td>
+          <td class="status">${status}</td>
+          <td class="amt">${usd(d.amount)}</td>
+          <td class="act">${d.sold ? "" : `<button class="btn btn-ink" data-ded="${idx}">Dedicate</button>`}</td>
+        </tr>`);
+    });
+  }
+}
+renderDed("all");
+document.querySelectorAll(".ded-filter button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".ded-filter button").forEach(x=>x.setAttribute("aria-pressed", x===b));
+  renderDed(b.dataset.f);
+}));
+
+// dedicate dialog
+const dd = document.getElementById("dd");
+body.addEventListener("click", e=>{
+  const b = e.target.closest("[data-ded]"); if(!b) return;
+  const d = DEDICATIONS[+b.dataset.ded];
+  document.getElementById("ddName").textContent = d.name;
+  document.getElementById("ddAmt").textContent = usd(d.amount);
+  const msg = `I would like to dedicate: ${d.name} (${usd(d.amount)}) in the new Peer Hatalmud building.`;
+  document.getElementById("ddMail").href = `mailto:${EMAIL}?subject=${encodeURIComponent("Dedication: "+d.name)}&body=${encodeURIComponent(msg)}`;
+  document.getElementById("ddWa").href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+  dd.showModal();
+});
+document.getElementById("ddClose").onclick = ()=>dd.close();
+dd.addEventListener("click", e=>{ if(e.target===dd) dd.close(); });
+
+// building tabs
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+function selectTab(t){
+  tabs.forEach(x=>{ const on = x===t; x.setAttribute("aria-selected",on); x.tabIndex = on?0:-1;
+    document.getElementById(x.getAttribute("aria-controls")).classList.toggle("on",on); });
+}
+tabs.forEach((t,i)=>{
+  t.addEventListener("click",()=>selectTab(t));
+  t.addEventListener("keydown",e=>{
+    const d = e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0; if(!d) return;
+    const n = tabs[(i+d+tabs.length)%tabs.length]; selectTab(n); n.focus();
+  });
+});
+
+// lightbox
+const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+function openLb(src,cap){ lbImg.src = src; lbImg.alt = cap; lbCap.textContent = cap; lb.showModal(); }
+document.querySelectorAll("[data-lb]").forEach(i=>i.addEventListener("click",()=>openLb(i.src,i.alt)));
+document.querySelectorAll("[data-lb-src]").forEach(b=>b.addEventListener("click",()=>openLb(b.dataset.lbSrc,b.dataset.lbCap)));
+document.getElementById("lbClose").onclick = ()=>lb.close();
+lb.addEventListener("click", e=>{ if(e.target===lb) lb.close(); });
+
+// copy
+document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",async()=>{
+  try{ await navigator.clipboard.writeText(b.dataset.copy); b.textContent="Copied"; setTimeout(()=>b.textContent="Copy address",1600);}catch(e){}
+}));
+
+// mobile menu
+const nav = document.getElementById("nav"), mb = document.getElementById("menuBtn");
+mb.addEventListener("click",()=>{ const o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded",o); mb.textContent = o?"CLOSE":"MENU"; });
+document.querySelectorAll("#menu a").forEach(a=>a.addEventListener("click",()=>{ nav.classList.remove("open"); mb.setAttribute("aria-expanded",false); mb.textContent="MENU"; }));
+
+// reveal on scroll
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }),{rootMargin:"0px 0px -8% 0px"}) : null;
+document.querySelectorAll(".reveal").forEach(el=> io ? io.observe(el) : el.classList.add("in"));
+</script>
 </body>
 </html>
